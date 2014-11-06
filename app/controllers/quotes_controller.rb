@@ -1,10 +1,10 @@
 class QuotesController < Rulers::Controller
+  attr_accessor :hello
   def a_quote
-   "There is nothing either good or bad " +
-      "but thinking makes it uuuuuso."
+    @hello = 'one person'
+    render :a_quote,{content: "hello world !"}
   end
   def exception
     p "its a bad one"
   end
-
 end
