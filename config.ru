@@ -1,2 +1,8 @@
 require './config/application'
-run BestQuotes::Application.new 
+
+
+application = BestQuotes::Application.new
+
+run  application
+
+
